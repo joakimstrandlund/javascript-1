@@ -1,0 +1,44 @@
+<script>
+  // task 1
+  const printCurrentTime = () => {
+    const currentTime = new Date();
+    return currentTime.toLocaleTimeString();
+  };
+  console.log(printCurrentTime());
+
+  // task 2
+  const printMyName = () => {
+    console.log('Joakim');
+  };
+  printMyName();
+  printMyName();
+
+  // task 3
+  const printGreeting = (name) => {
+    return 'Hello ' + name;
+  };
+  console.log(printGreeting('Bob'));
+  console.log(printGreeting('Sue'));
+
+  // task 4
+  const multiply = (first, second) => {
+    return first * second;
+  };
+  const first = multiply(2, 2);
+  console.log(first);
+  const second = multiply(100, 4);
+  console.log(second);
+
+  // task 5
+  const warmEnough = (temp) => {
+    if (temp > 10) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  if (warmEnough(15)) {
+    console.log('Go for a run!');
+  }
+</script>
